@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>odin-forms-project</title>
+    <title>Styled Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="left">
-        <img src="images/logo.png" alt="logo">
-        <h1>ODIN</h1>
+    <div class="container">
+        <div class="form-left">
+            <div class="content">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <h1 class="overlay-text">ODIN</h1>
+            </div>
+        </div>
+        <div class="form-right">
+            <h2>Let's do it!</h2>
+            <form>
+                <div class="form-group">
+                    <div class="form-column">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="sirronney">
+                    </div>
+                    <div class="form-column">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="cloudev">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-column">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@gmailcom" required >
+                    </div>
+                    <div class="form-column">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[+254]{4}[0-9]{9}" placeholder="Enter Kenyan phone number">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-column">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-column">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Login</a></p>
+            </form>
+        </div>
     </div>
 
-    <div class="right">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus ipsa quia distinctio, sit repudiandae reiciendis, praesentium
-        </p>
-
-        <form action="post">
-            <h2>Let's do this!</h2>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" name="first name" id="first_name">
-
-            <label for="last_name">LAST NAME</label>
-            <input type="text" name="last name" id="last_name">
-
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email">
-
-            <label for="phone_number">PHONE NUMBER</label>
-            <input type="tel" name="phone number" id="phone_number">
-
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
-
-            <label for="confirm_password">CONFIRM PASSWORD</label>
-            <input type="password" name="confirm password" id="confirm_password">
-        </form>
-
-        <button type="button" class="create-account-btn">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+    <div class="footer">
+        <p>&copy; sirronney@cloudev. happy coding!</p>
     </div>
 </body>
 </html>

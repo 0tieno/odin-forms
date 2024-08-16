@@ -1,5 +1,7 @@
 # Odin Forms
 
+![Form Screenshot](images/form-screenshot.png)
+
 ## Technologies Used
 
 - HTML
@@ -20,7 +22,3 @@
     ```
 
 3. Open `index.html` in your web browser to view the form.
-
-## Screenshots
-
-![Form Screenshot](images/form-screenshot.png)
